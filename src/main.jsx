@@ -1,5 +1,4 @@
 import { createRoot } from 'react-dom/client'
-import './index.css'
 
 import {
   createBrowserRouter,
@@ -7,12 +6,14 @@ import {
 } from "react-router-dom";
 import React from 'react';
 import LandingPage from './Pages/LandingPage';
+import './index.css'; 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <><LandingPage/></>,
   },
+
 ]);
 
 createRoot(document.getElementById('root')).render(
